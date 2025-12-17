@@ -12,7 +12,8 @@ const Hero = () => {
 
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
                 <h1 className="
-                font-bold whitespace-normal 
+                font-bold 
+                whitespace-normal 
                 xl:whitespace-nowrap 
                 text-4xl 
                 sm:text-5xl 
