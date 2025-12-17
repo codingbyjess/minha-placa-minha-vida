@@ -10,7 +10,16 @@ const Header = () => {
     };
 
     return (
-        <header className="relative flex items-center justify-between px-10 py-5 border-2 border-(--third)">
+        <header className="
+        relative 
+        flex 
+        items-center 
+        justify-between 
+        px-10 
+        py-5 
+        border-2 
+        border-(--third)"
+        >
 
             <Image
                 src="/minha-placa-minha-vida-icon.png"
@@ -36,7 +45,19 @@ const Header = () => {
             </button>
 
             {openMenu && (
-                <div className="absolute top-full right-0 w-full border-2 border-(--third) flex flex-col items-center gap-4 py-6">
+                <div className="
+                absolute 
+                top-full 
+                right-0 
+                w-full 
+                border-2 
+                border-(--third) 
+                flex 
+                flex-col 
+                items-center 
+                gap-4 
+                py-6"
+                >
                     <span className="text-(--second)">Serviços</span>
                     <span className="text-(--second)">Diagnóstico</span>
                     <span className="text-(--second)">Suporte</span>
