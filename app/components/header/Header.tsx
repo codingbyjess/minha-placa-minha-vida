@@ -1,9 +1,17 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
+import Link from 'next/link';
 
 const Header = () => {
     const [openMenu, setOpenMenu] = useState(false);
+
+    const navItems = [
+        { label: 'Serviços', href: '1' },
+        { label: 'Diagnóstico', href: '2' },
+        { label: 'Suporte', href: '3' },
+    ];
 
     const handleOpenMenu = () => {
         setOpenMenu(!openMenu);
@@ -28,20 +36,27 @@ const Header = () => {
                 height={50}
             />
 
-            <nav className="flex gap-8 max-[490px]:hidden">
-                <span className="text-(--second) cursor-pointer">Serviços</span>
-                <span className="text-(--second) cursor-pointer">Diagnóstico</span>
-                <span className="text-(--second) cursor-pointer">Suporte</span>
+            <nav className="flex gap-8 max-sm:hidden">
+                {navItems.map((item) => (
+                    <Link
+                        key={item.href}
+                        href={item.href}
+                        className="
+                        text-(--second) 
+                        hover:text-(--third) 
+                        transition-colors"
+                    >
+                        {item.label}
+                    </Link>
+                ))}
             </nav>
 
             <button
                 onClick={handleOpenMenu}
-                className="hidden max-[490px]:flex flex-col gap-1"
+                className="hidden max-sm:flex flex-col gap-1"
                 aria-label="Abrir menu"
             >
-                <span className="w-6 h-0.5 bg-(--second)" />
-                <span className="w-6 h-0.5 bg-(--second)" />
-                <span className="w-6 h-0.5 bg-(--second)" />
+                <MenuIcon sx={{ fontSize: 50, color: 'var(--second)' }} />
             </button>
 
             {openMenu && (
@@ -51,16 +66,23 @@ const Header = () => {
                 right-0 
                 w-full 
                 border-2 
-                border-(--third) 
+                border-(--third)
                 flex 
                 flex-col 
                 items-center 
                 gap-4 
-                py-6"
+                py-3
+                sm:hidden"
                 >
-                    <span className="text-(--second)">Serviços</span>
-                    <span className="text-(--second)">Diagnóstico</span>
-                    <span className="text-(--second)">Suporte</span>
+                    {navItems.map((item) => (
+                        <Link
+                            key={item.href}
+                            href={item.href}
+                            className="text-(--second) hover:text-(--third)"
+                        >
+                            {item.label}
+                        </Link>
+                    ))}
                 </div>
             )}
         </header>
