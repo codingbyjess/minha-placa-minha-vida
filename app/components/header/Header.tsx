@@ -44,7 +44,7 @@ const Header = () => {
                         className="
                         text-(--second) 
                         hover:text-(--third) 
-                        transition-colors"
+                        transition"
                     >
                         {item.label}
                     </Link>
@@ -78,7 +78,10 @@ const Header = () => {
                         <Link
                             key={item.href}
                             href={item.href}
-                            className="text-(--second) hover:text-(--third)"
+                            className="
+                            text-(--second) 
+                            hover:text-(--third)
+                            transition"
                         >
                             {item.label}
                         </Link>
