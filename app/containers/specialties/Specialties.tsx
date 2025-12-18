@@ -5,7 +5,7 @@ const Specialties = () => {
                 Seu equipamento em boas mãos
             </h1>
             <div className="mt-4">
-                <h2 className="
+                <p className="
                 whitespace-normal 
                 xl:whitespace-nowrap 
                 text-foreground"
@@ -15,7 +15,7 @@ const Specialties = () => {
                         time especializado e tecnologia avançada
                     </span>
                     , cuidamos do seu equipamento como se fosse nosso.
-                </h2>
+                </p>
             </div>
         </section>
     );

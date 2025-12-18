@@ -15,7 +15,7 @@ const Diagnosis = () => {
                 <Button
                     href=""
                     bgColor="var(--third)"
-                    text="Quero meu diagnóstico"
+                    text="Acessar formulário"
                     hoverColor="var(--second)"
                 />
             </div>
