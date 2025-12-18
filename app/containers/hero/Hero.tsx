@@ -1,3 +1,4 @@
+import Button from "@/app/components/button/Button";
 import Image from "next/image";
 
 const Hero = () => {
@@ -10,7 +11,15 @@ const Hero = () => {
                 className="object-cover opacity-35 blur-xs"
             />
 
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+            <div className="
+            absolute 
+            inset-0 
+            flex 
+            flex-col 
+            items-center 
+            justify-center 
+            text-center"
+            >
                 <h1 className="
                 font-bold 
                 whitespace-normal 
@@ -30,33 +39,18 @@ const Hero = () => {
                 </strong>
 
                 <div className="xl:whitespace-nowrap mt-20 space-x-4">
-                    <button className="
-                    mt-8 
-                    px-6 
-                    py-3 
-                    bg-(--third) 
-                    text-foreground 
-                    rounded-xl 
-                    hover:bg-(--second) 
-                    transition 
-                    cursor-pointer"
-                    >
-                        Quero um orçamento
-                    </button>
-                    <button className="
-                    mt-8 
-                    px-6 
-                    py-3 
-                    bg-transparent 
-                    text-foreground 
-                    rounded-xl 
-                    border-2 
-                    border-foreground 
-                    transition 
-                    cursor-pointer"
-                    >
-                        Falar com um consultor
-                    </button>
+                    <Button
+                        href=""
+                        text="Quero um orçamento"
+                        bgColor="var(--third)"
+                        hoverColor="var(--second)"
+                    />
+                    <Button
+                        href=""
+                        text="Falar com um consultor"
+                        bgColor="transparent"
+                        bdColor="var(--foreground)"
+                    />
                 </div>
             </div>
         </section>
