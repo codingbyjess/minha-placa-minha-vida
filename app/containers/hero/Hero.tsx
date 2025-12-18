@@ -35,10 +35,12 @@ const Hero = () => {
                 </h1>
 
                 <strong className="text-foreground mt-20 max-w-xl sm:text-3xl">
-                    Micro-soldagem · Limpeza de Computadores · Recuperação de Placas de Eletrodomésticos
+                    Micro-soldagem ·
+                    Limpeza de Computadores ·
+                    Recuperação de Placas de Eletrodomésticos
                 </strong>
 
-                <div className="xl:whitespace-nowrap mt-20 space-x-4">
+                <div className="mt-20 flex flex-col sm:flex-row gap-4 sm:space-x-4">
                     <Button
                         href=""
                         text="Quero um orçamento"
