@@ -26,7 +26,8 @@ const BoxService = ({ title, icon }: BoxServiceProps) => {
         <div className="
         mb-10
         bg-(--fourth)/30
-        w-70 
+        w-full
+        md:w-70 
         min-h-60 
         border-2 
         border-(--second) 
