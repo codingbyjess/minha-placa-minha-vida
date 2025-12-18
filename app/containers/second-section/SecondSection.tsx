@@ -9,11 +9,11 @@ const SecondSection = () => {
             </h1>
             <div className="relative justify-items-center">
                 <div className="
-          grid 
-          grid-cols-1 
-          md:grid-cols-2 
-          md:gap-10 
-          mt-5"
+                grid 
+                grid-cols-1 
+                md:grid-cols-2 
+                md:gap-10 
+                mt-5"
                 >
                     <div>
                         <BoxService
