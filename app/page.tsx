@@ -33,7 +33,7 @@ export default function Home() {
           grid 
           grid-cols-1 
           md:grid-cols-2 
-          gap-10 
+          md:gap-10 
           mt-5"
           >
             <div>
@@ -46,7 +46,7 @@ export default function Home() {
                 title="Limpeza de Computadores"
               />
             </div>
-            <div className="mt-20">
+            <div className="md:mt-20">
               <BoxService
                 icon="memory"
                 title="Recuperação de Placas de Eletrodomésticos"
