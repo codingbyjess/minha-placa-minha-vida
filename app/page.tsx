@@ -1,17 +1,17 @@
-import FirstSection from "./containers/first-section/firstSection";
-import FourthSection from "./containers/fourth-section/FourthSection";
+import Specialties from "./containers/specialties/Specialties";
+import Diagnosis from "./containers/diagnosis/Diagnosis";
 import Hero from "./containers/hero/Hero";
-import SecondSection from "./containers/second-section/SecondSection";
-import ThirdSection from "./containers/third-section/ThirdSection";
+import Services from "./containers/services/Services";
+import Review from "./containers/review/Review";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <FourthSection />
+      <Specialties />
+      <Services />
+      <Review />
+      <Diagnosis />
     </main>
   );
 }

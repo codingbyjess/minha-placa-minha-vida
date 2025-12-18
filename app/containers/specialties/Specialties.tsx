@@ -1,4 +1,4 @@
-const FirstSection = () => {
+const Specialties = () => {
     return(
         <section className="p-10">
             <h1 className="text-3xl text-foreground font-bold">
@@ -21,4 +21,4 @@ const FirstSection = () => {
     );
 }
 
-export default FirstSection;
+export default Specialties;

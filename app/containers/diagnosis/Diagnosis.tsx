@@ -1,6 +1,6 @@
 import Button from "@/app/components/button/Button";
 
-const FourthSection = () => {
+const Diagnosis = () => {
 
     return (
         <section className="p-10">
@@ -23,4 +23,4 @@ const FourthSection = () => {
     );
 }
 
-export default FourthSection;
+export default Diagnosis;

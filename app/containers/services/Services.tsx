@@ -1,7 +1,6 @@
 import BoxService from "@/app/components/box-service/BoxService";
 
-const SecondSection = () => {
-
+const Services = () => {
     return (
         <section className="p-10">
             <h1 className="text-3xl text-foreground font-bold">
@@ -41,4 +40,4 @@ const SecondSection = () => {
     );
 }
 
-export default SecondSection;
+export default Services;

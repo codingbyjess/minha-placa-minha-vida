@@ -1,7 +1,6 @@
 import BoxComments from "@/app/components/box-comments/BoxComments";
 
-const ThirdSection = () => {
-
+const Review = () => {
     return (
         <section className="p-10">
             <h1 className="text-3xl text-foreground font-bold">
@@ -38,4 +37,4 @@ const ThirdSection = () => {
     );
 }
 
-export default ThirdSection;
+export default Review;
