@@ -29,7 +29,7 @@ const Hero = () => {
                     Micro-soldagem · Limpeza de Computadores · Recuperação de Placas de Eletrodomésticos
                 </strong>
 
-                <div className="whitespace-nowrap mt-20 space-x-4">
+                <div className="xl:whitespace-nowrap mt-20 space-x-4">
                     <button className="
                     mt-8 
                     px-6 
