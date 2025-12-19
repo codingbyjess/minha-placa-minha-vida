@@ -1,4 +1,5 @@
-import BoxComments from "@/src/components/box-comments/BoxComments";
+import BoxComments from "@/src/components/box-comments";
+
 
 const Review = () => {
     return (
