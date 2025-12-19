@@ -18,24 +18,24 @@ const Services = () => {
                         <BoxService
                             icon="devBoard"
                             title="Micro-soldagem"
-                            href="/micro-soldering"
+                            href="/services/micro-soldagem"
                         />
                         <BoxService
                             icon="cleaningServices"
                             title="Limpeza de Computadores"
-                            href="/micro-soldering"
+                            href="/services/limpeza"
                         />
                     </div>
                     <div className="md:mt-20">
                         <BoxService
                             icon="memory"
                             title="Recuperação de Placas de Eletrodomésticos"
-                            href="/micro-soldering"
+                            href="/services/recuperacao"
                         />
                         <BoxService
                             icon="computer"
                             title="Formatações"
-                            href="/micro-soldering"
+                            href="/services/formatacao"
                         />
                     </div>
                 </div>
