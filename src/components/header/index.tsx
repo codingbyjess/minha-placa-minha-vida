@@ -8,9 +8,9 @@ const Header = () => {
     const [openMenu, setOpenMenu] = useState(false);
 
     const navItems = [
-        { label: 'Serviços', href: '1' },
-        { label: 'Diagnóstico', href: '2' },
-        { label: 'Suporte', href: '3' },
+        { label: 'Serviços', href: '#' },
+        { label: 'Diagnóstico', href: '#' },
+        { label: 'Suporte', href: '#' },
     ];
 
     const handleOpenMenu = () => {
@@ -39,7 +39,7 @@ const Header = () => {
             <nav className="flex gap-8 max-sm:hidden">
                 {navItems.map((item) => (
                     <Link
-                        key={item.href}
+                        key={item.label}
                         href={item.href}
                         className="
                         text-(--second) 
@@ -76,7 +76,7 @@ const Header = () => {
                 >
                     {navItems.map((item) => (
                         <Link
-                            key={item.href}
+                            key={item.label}
                             href={item.href}
                             className="
                             text-(--second) 
