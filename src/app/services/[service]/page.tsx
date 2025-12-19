@@ -54,7 +54,7 @@ export default async function ServiceSlugPage(
             grid-cols-1 
             lg:grid-cols-2 
             gap-10 
-            items-start"
+            items-center"
             >
                 <div className="flex flex-col gap-8">
                     <h1 className="
