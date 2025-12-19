@@ -1,4 +1,4 @@
-import Button from "@/app/components/button/Button";
+import Button from "@/src/components/button/Button";
 
 const Diagnosis = () => {
 

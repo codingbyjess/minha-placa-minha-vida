@@ -1,5 +1,5 @@
 'use client';
-import Button from '@/app/components/button/Button';
+import Button from '@/src/components/button/Button';
 import {
     Memory,
     DeveloperBoard,
@@ -11,7 +11,8 @@ type iconName = "memory" | "devBoard" | "cleaningServices" | "computer"
 
 type BoxServiceProps = {
     title: string,
-    icon: iconName;
+    icon: iconName,
+    href: string
 };
 
 const iconMap = {
@@ -21,7 +22,7 @@ const iconMap = {
     computer: <Computer sx={{ fontSize: 50, color: 'var(--third)' }} />
 }
 
-const BoxService = ({ title, icon }: BoxServiceProps) => {
+const BoxService = ({ title, icon, href }: BoxServiceProps) => {
     return (
         <div className="
         mb-10
@@ -50,7 +51,7 @@ const BoxService = ({ title, icon }: BoxServiceProps) => {
             </div>
             <div className="flex justify-center">
                 <Button
-                    href=''
+                    href={href}
                     bgColor='transparent'
                     text='Conhecer'
                     bdColor='var(--foreground)'

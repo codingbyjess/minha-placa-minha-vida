@@ -1,9 +1,9 @@
-import Specialties from "./containers/specialties/Specialties";
-import Diagnosis from "./containers/diagnosis/Diagnosis";
-import Hero from "./containers/hero/Hero";
-import Services from "./containers/services/Services";
-import Review from "./containers/review/Review";
-import Guarantees from "./containers/guarantees/Guarantees";
+import Specialties from "../src/containers/specialties/Specialties";
+import Diagnosis from "../src/containers/diagnosis/Diagnosis";
+import Hero from "../src/containers/hero/Hero";
+import Services from "../src/containers/services/Services";
+import Review from "../src/containers/review/Review";
+import Guarantees from "../src/containers/guarantees/Guarantees";
 
 export default function Home() {
   return (

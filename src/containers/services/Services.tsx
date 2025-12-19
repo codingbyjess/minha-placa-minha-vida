@@ -1,4 +1,4 @@
-import BoxService from "@/app/components/box-service/BoxService";
+import BoxService from "@/src/components/box-service/BoxService";
 
 const Services = () => {
     return (
@@ -18,20 +18,24 @@ const Services = () => {
                         <BoxService
                             icon="devBoard"
                             title="Micro-soldagem"
+                            href="/micro-soldering"
                         />
                         <BoxService
                             icon="cleaningServices"
                             title="Limpeza de Computadores"
+                            href="/micro-soldering"
                         />
                     </div>
                     <div className="md:mt-20">
                         <BoxService
                             icon="memory"
                             title="Recuperação de Placas de Eletrodomésticos"
+                            href="/micro-soldering"
                         />
                         <BoxService
                             icon="computer"
                             title="Formatações"
+                            href="/micro-soldering"
                         />
                     </div>
                 </div>
