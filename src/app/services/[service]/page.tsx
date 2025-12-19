@@ -9,9 +9,9 @@ export default async function ServiceSlugPage(
     { params }: { params: Promise<{ service: string }> }
 ) {
     const { service } = await params;
-    const dados = dataServices[service as keyof typeof dataServices];
+    const data = dataServices[service as keyof typeof dataServices];
 
-    if (!dados) return notFound();
+    if (!data) return notFound();
 
     return (
         <main className="p-10 space-y-20">
@@ -29,7 +29,7 @@ export default async function ServiceSlugPage(
                 font-bold 
                 text-center"
                 >
-                    {dados.title}
+                    {data.title}
                 </h1>
                 <h2 className="
                 text-3xl
@@ -38,11 +38,11 @@ export default async function ServiceSlugPage(
                 font-bold 
                 text-center"
                 >
-                    {dados.subtitle}
+                    {data.subtitle}
                 </h2>
                 <Image
-                    alt={dados.p}
-                    src={dados.image}
+                    alt={data.p}
+                    src={data.image}
                     width={400}
                     height={350}
                     className="object-cover rounded-xl"
@@ -63,14 +63,14 @@ export default async function ServiceSlugPage(
                     font-bold 
                     leading-tight"
                     >
-                        {dados.copy}{" "}
+                        {data.copy}{" "}
                         <span className="text-(--third)">
-                            {dados.copyGreen}
+                            {data.copyGreen}
                         </span>
                     </h1>
                     <Button
                         bgColor="var(--third)"
-                        href=""
+                        href={`/form-diagnosis?service=${data.service}`}
                         text="Acessar formulário"
                         hoverColor="var(--second)"
                     />
@@ -108,7 +108,7 @@ export default async function ServiceSlugPage(
                             </h2>
                         </div>
                         <ul className="space-y-3">
-                            {dados.includeList.map((item, index) => (
+                            {data.includeList.map((item, index) => (
                                 <li key={index} className="
                                 flex 
                                 items-start 
@@ -161,7 +161,7 @@ export default async function ServiceSlugPage(
                             </h2>
                         </div>
                         <ul className="space-y-3">
-                            {dados.timeList.map((t, index) => (
+                            {data.timeList.map((t, index) => (
                                 <li key={index} className="
                                 flex 
                                 items-start 

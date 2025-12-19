@@ -16,12 +16,13 @@ export const dataServices = {
         timeList: [
             { label: "Diagnóstico", value: "até 48 horas" },
             { label: "Reparo", value: "3 a 7 dias úteis" }
-        ]
+        ],
+        service: 'micro-soldagem'
     },
     "limpeza": {
         title: "Limpeza de computadores",
         subtitle: "Manutenção técnica no nível certo",
-        p: "Reparamos placas eletrônicas a nível microscópico, corrigindo falhas que a maioria das assistências considera perda total.",
+        p: "Realizamos a descontaminação profunda do seu hardware, eliminando resíduos invisíveis que oxidam componentes e causam falhas irreversíveis antes mesmo de você notar.",
         copy: "Evite travamentos agendando sua",
         copyGreen: "limpeza técnica",
         image: "/cleaning-board.png",
@@ -33,7 +34,8 @@ export const dataServices = {
         ],
         timeList: [
             { label: "Execução", value: "1 a 2 dias úteis." },
-        ]
+        ],
+        service: 'limpeza de hardware'
     },
     "recuperacao": {
         title: "Seu eletrodoméstico não está perdido",
@@ -52,7 +54,8 @@ export const dataServices = {
         timeList: [
             { label: "Diagnóstico", value: "até 48 horas." },
             { label: "Reparo", value: "3 a 7 dias úteis, conforme a complexidade da placa." },
-        ]
+        ],
+        service: 'recuperação de placa de eletrodoméstico'
     },
     "formatacao": {
         title: "Formatar não é apagar tudo",
@@ -72,6 +75,7 @@ export const dataServices = {
         ],
         timeList: [
             { label: "Execução", value: "1 a 2 dias úteis, dependendo do volume de dados e configurações necessárias." },
-        ]
-    },
+        ],
+        service: "formatação"
+    }
 };
