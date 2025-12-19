@@ -1,4 +1,4 @@
-import BoxService from "@/src/components/box-service/BoxService";
+import BoxService from "@/src/components/box-service";
 
 const Services = () => {
     return (
