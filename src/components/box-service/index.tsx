@@ -1,5 +1,5 @@
 'use client';
-import Button from '@/src/components/button/Button';
+import Button from '@/src/components/button';
 import {
     Memory,
     DeveloperBoard,
