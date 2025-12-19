@@ -13,18 +13,12 @@ const DiagnosisForm = (
         deviceType: '',
         problem: '',
         model: '',
-        previousRepair: 'Não',
-        liquidDamage: 'Não'
     });
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
-        const message = `Olá! Meu ${formData.deviceType} (${formData.model}) 
-        está com o seguinte problema: ${formData.problem}. 
-        Previamente mexido: ${formData.previousRepair}. 
-        Contato com líquido/queda: ${formData.liquidDamage}. 
-        Gostaria de um orçamento para o serviço de ${serviceName}.`;
+        const message = `Olá! Meu ${formData.deviceType} (${formData.model}) está com o seguinte problema: ${formData.problem}. Gostaria de um orçamento para o serviço de ${serviceName}.`;
 
         const encodedMessage = encodeURIComponent(message);
         const whatsappNumber = "5532985043788";
@@ -116,45 +110,6 @@ const DiagnosisForm = (
                     }
                     required
                 />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                    <label className={labelClass}>
-                        Já passou por{" "}
-                        <span className="text-(--third)">
-                            assistência
-                        </span>
-                        ?
-                    </label>
-                    <select
-                        className={inputClass}
-                        onChange={(e) =>
-                            setFormData({ ...formData, previousRepair: e.target.value })
-                        }
-                    >
-                        <option value="Não">Não</option>
-                        <option value="Sim">Sim</option>
-                    </select>
-                </div>
-                <div>
-                    <label className={labelClass}>
-                        Teve contato com{" "}
-                        <span className="text-(--third)">
-                            líquido
-                        </span>
-                        ?
-                    </label>
-                    <select
-                        className={inputClass}
-                        onChange={(e) =>
-                            setFormData({ ...formData, liquidDamage: e.target.value })
-                        }
-                    >
-                        <option value="Não" className="bg-background text-foreground">Não</option>
-                        <option value="Sim" className="bg-background text-foreground">Sim</option>
-                    </select>
-                
-                </div>
             </div>
 
             <button

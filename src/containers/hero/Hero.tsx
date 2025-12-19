@@ -42,7 +42,7 @@ const Hero = () => {
 
                 <div className="mt-20 flex flex-col sm:flex-row gap-4 sm:space-x-4">
                     <Button
-                        href=""
+                        href={`/form-diagnosis?service=geral`}
                         text="Acessar formulário"
                         bgColor="var(--third)"
                         hoverColor="var(--second)"

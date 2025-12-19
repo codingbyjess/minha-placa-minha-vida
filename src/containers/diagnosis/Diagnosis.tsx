@@ -13,7 +13,7 @@ const Diagnosis = () => {
             </h2>
             <div className="relative justify-baseline">
                 <Button
-                    href=""
+                    href={`/form-diagnosis?service=geral`}
                     bgColor="var(--third)"
                     text="Acessar formulário"
                     hoverColor="var(--second)"

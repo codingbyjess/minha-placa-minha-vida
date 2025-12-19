@@ -40,7 +40,9 @@ const Footer = () => {
                         <h2 className='font-bold text-foreground mb-2'>
                             Ferramentas e Serviços
                         </h2>
-                        <Link href='' className='
+                        <Link
+                            href={`/form-diagnosis?service=geral`}
+                            className='
                         text-foreground/70 
                         hover:text-foreground/50 
                         transition'
