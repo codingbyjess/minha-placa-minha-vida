@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Projeto Minha Placa Minha Vida
+(My Board My Life Project)
 
-## Getting Started
+O projeto Minha Placa Minha Vida consiste no desenvolvimento de um site institucional para uma empresa fictícia de soluções tecnológicas. O objetivo principal da plataforma é apresentar um catálogo detalhado de serviços, enfatizando que a empresa foca exclusivamente na prestação de serviços técnicos, sem realizar a venda ou troca de componentes e aparelhos.
 
-First, run the development server:
+(The "My Board My Life" project consists of developing an institutional website for a fictitious technical solutions company. The platform's primary goal is to present a detailed catalog of services, emphasizing that the company focuses exclusively on providing technical services, without selling or exchanging components and devices.)
 
-```bash
+## Prototipação
+(Prototyping)
+
+A identidade visual foi projetada para transmitir profissionalismo, confiança e precisão técnica. Com base na logomarca da empresa, definimos as seguintes diretrizes:
+
+Paleta de Cores: Tons de azul e verde que remetem à inovação tecnológica e estabilidade.
+
+Tipografia: Utilização de fontes sans-serif para garantir legibilidade, clareza e uma estética moderna.
+
+Interface (UI): Design minimalista e intuitivo, focado na experiência do usuário (UX) para facilitar o acesso rápido aos serviços e canais de contato.
+
+(The visual identity was designed to convey professionalism, trust, and technical precision. Based on the company's logo, we defined the following guidelines:
+
+Color Palette: Blue and green tones that evoke technological innovation and stability.
+
+Typography: Use of sans-serif fonts to ensure readability, clarity, and a modern aesthetic.
+
+Interface (UI): Minimalist and intuitive design, focused on user experience (UX) to facilitate quick access to services and contact channels.)
+
+## Funcionalidades
+(Features)
+
+Catálogo de Serviços: Exibição detalhada de procedimentos técnicos como limpeza interna, micro-soldagem e formatação de sistemas.
+
+Seção Sobre: Apresentação da missão e dos valores fundamentais da empresa.
+
+Canais de Contato: Formulário de contato integrado e botões flutuantes para orçamentos diretos via WhatsApp.
+
+Design Responsivo: Interface totalmente adaptável para smartphones, tablets e desktops.
+
+(Service Catalog: Detailed display of technical procedures such as internal cleaning, micro-soldering, and system formatting.
+
+About Section: Presentation of the company's mission and core values.
+
+Contact Channels: Integrated contact form and floating buttons for direct quotes via WhatsApp.
+
+Responsive Design: Fully adaptable interface for smartphones, tablets, and desktops.)
+
+## Tecnologias Utilizadas
+(Technologies Used)
+
+Figma: Design de interface e prototipação.
+
+Next.js: Framework React para otimização de performance e SEO.
+
+Material UI: Biblioteca de componentes para ícones e elementos visuais.
+
+Tailwind CSS: Framework utilitário para estilização rápida, responsividade e código limpo.
+
+Git & GitHub: Controle de versionamento e hospedagem do código-fonte.
+
+(Figma: Interface design and prototyping.
+
+Next.js: React framework for performance optimization and SEO.
+
+Material UI: Component library for icons and visual elements.
+
+Tailwind CSS: Utility-first framework for fast styling, responsiveness, and clean code.
+
+Git & GitHub: Version control and source code hosting.)
+
+## Como visualizar o projeto
+(How to view the project)
+
+Siga os passos abaixo para executar o projeto localmente:
+
+(Follow the steps below to run the project locally:)
+
+Clone o repositório: (Clone the repository:)
+
+Bash
+
+git clone https://github.com/codingbyjess/minha-placa-minha-vida.git
+Navegue até a pasta do projeto: (Navigate to the project folder:)
+
+Bash
+
+cd minha-placa-minha-vida
+Instale as dependências: (Install dependencies:)
+
+Bash
+
+npm install
+# ou / or
+yarn install
+Inicie o servidor de desenvolvimento: (Start the development server:)
+
+Bash
+
 npm run dev
-# or
+# ou / or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Acesse no navegador: (Access in your browser:) http://localhost:3000
